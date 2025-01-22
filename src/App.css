@@ -1,0 +1,127 @@
+/* TopNav Component */
+.topNavBar{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.openingHours{
+  margin: 0px;
+  padding: 5px;
+  color: white;
+  background-color: #c77d3a;
+}
+.topNavMenu{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100vw;
+  align-items: center;
+  background-color: #302011ee;
+  color: #ffffff;
+}
+.topNavMenu ul{
+  padding: 0px;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10%;
+}
+.topNavMenu h2{
+  margin-left: 1%;
+}
+/**(DESKTOP)HomePage Layout **/
+.homeGrid{
+  display: grid;
+  grid-template-rows: repeat(1,1fr);
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: -100;
+  row-gap: 50px;
+}
+.homePageLayout{
+  display: flex;
+  flex-direction: column;
+  width:100vw;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(assets/home-background.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.PrimaryBtn{
+  background-color: #c77e3aee;
+  width: 125px;
+  height: 50px;
+  margin-right: 15px;
+}
+.SecondaryBtn{
+  background-color: #412307ee;
+  color: white;
+  width: 125px;
+  height: 50px;
+
+}
+/* (Desktop) Featured Items layout */
+
+.featuredPageLayout{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 100;
+  margin: 0 5%;
+  height: 100%;
+  position: relative;
+
+  gap: 10px;
+
+}
+.featItemCard{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+  border: solid 1px white;
+  max-height: 270px;
+  max-width: 250px;
+}
+.featItemCard h3{
+  margin: 0;
+}
+.featItemCard img{
+  width: 100%;
+  cursor: pointer;
+  object-fit: contain;
+  height: 100%;
+}
+.AboutUsGrid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  height: 100%;
+}
+.CIMAGE {
+  display: flex;
+  justify-content: center;
+}
+.CIMAGE img{
+  border-radius: 20%;
+  width: auto;
+  height: 400px;
+
+}
+/* MOBILE VERSION */
+/* (MOBILE) Featured Items layout */
+@media screen and (max-width:800px) {
+  .featuredPageLayout{
+    grid-template-columns: none;
+    grid-template-rows: repeat(auto,1fr);
+}  
+.featItemCard{
+  max-height: 100%;
+  max-width: 100%;
+}
+}
