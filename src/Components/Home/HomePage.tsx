@@ -12,13 +12,17 @@ const HomePage = () => {
     { name: "Hot Tea", image: tea },
     { name: "Creamy Latte", image: latte },
     { name: "Fresh Croissant", image: croissant },
+    { name: "Fresh Coffee", image: coffee },
+    { name: "Hot Tea", image: tea },
+    { name: "Creamy Latte", image: latte },
+    { name: "Fresh Croissant", image: croissant },
   ];
 
   return (
     <>
       <div className="homeGrid">
         {/* HomePage Layout */}
-        <div className="homePageLayout">
+        <section id="home" className="homePageLayout">
           <h1>Lorem, ipsum dolor.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus
@@ -28,9 +32,9 @@ const HomePage = () => {
             <button className="PrimaryBtn">About Us</button>
             <button className="SecondaryBtn">Menu</button>
           </div>
-        </div>
+        </section>
         {/* Featured Items Menu */}
-        <div className="FeatPageLayout">
+        <section id="featured" className="FeatPageLayout">
           <h1>Featured Items</h1>
           <div className="featuredPageLayout">
             {featuredItems.map((items) => (
@@ -40,39 +44,44 @@ const HomePage = () => {
               </div>
             ))}
           </div>
-        </div>
+        </section>
         {/* ABOUT US LAYOUT */}
-        <div className="AboutUsGrid">
-          <div>
-            <h2>Lorem, ipsum.</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Distinctio praesentium adipisci possimus ratione illo porro
-              voluptas totam, voluptatibus saepe assumenda libero nulla sed
-              dolor corrupti, omnis atque minima in, a enim dolorem vero
-              consectetur dolorum officiis accusamus? Sequi, laudantium quae.
-            </p>
+        <section id="about">
+          <h1> About us</h1>
+          <div className="AboutUsGrid">
+            <div>
+              <h2>Our vision</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Distinctio praesentium adipisci possimus ratione illo porro
+                voluptas totam, voluptatibus saepe assumenda libero nulla sed
+                dolor corrupti, omnis atque minima in, a enim dolorem vero
+                consectetur dolorum officiis accusamus? Sequi, laudantium quae.
+              </p>
+            </div>
+            <div className="CIMAGE">
+              <img src={maleModel} alt="" />
+            </div>
+            <div className="CIMAGE">
+              <img src={femaleModel} alt="" />
+            </div>
+            <div>
+              <h2>Work ethic</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Asperiores, debitis dolorem repellendus dicta quaerat saepe sed
+                quasi praesentium voluptatibus accusamus culpa, illo blanditiis
+                mollitia adipisci obcaecati neque accusantium possimus eum
+                nobis, sint numquam quidem nulla! Quisquam dolor deleniti ullam
+                provident?
+              </p>
+            </div>
           </div>
-          <div className="CIMAGE">
-            <img src={maleModel} alt="" />
-          </div>
-          <div className="CIMAGE">
-            <img src={femaleModel} alt="" />
-          </div>
-          <div>
-            <h2>Lorem, ipsum.</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Asperiores, debitis dolorem repellendus dicta quaerat saepe sed
-              quasi praesentium voluptatibus accusamus culpa, illo blanditiis
-              mollitia adipisci obcaecati neque accusantium possimus eum nobis,
-              sint numquam quidem nulla! Quisquam dolor deleniti ullam
-              provident?
-            </p>
-          </div>
-        </div>
+        </section>
         {/* Footer Layout */}
-        <Footer></Footer>
+        <section id="contact">
+          <Footer></Footer>
+        </section>
       </div>
     </>
   );

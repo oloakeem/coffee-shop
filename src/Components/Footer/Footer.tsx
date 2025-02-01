@@ -8,8 +8,8 @@ const Footer: React.FC = () => {
         {/* CLIENT SERVICE Section */}
         <div className={styles["footer-column"]}>
           <p>Join our Email listing and get exlcusive offers.</p>
-          <input type="text" />
-          <button> Sign up</button>
+          <input className="signUpInput" type="text" />
+          <button className="signUpBtn"> Sign up</button>
         </div>
 
         {/* ABOUT US Section */}

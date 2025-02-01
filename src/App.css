@@ -3,6 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  height: 80px;
 }
 .openingHours{
   margin: 0px;
@@ -30,6 +31,13 @@
 .topNavMenu h2{
   margin-left: 1%;
 }
+#about,
+.FeatPageLayout,
+#contact{
+padding-top: 80px;
+}
+
+
 /**(DESKTOP)HomePage Layout **/
 .homeGrid{
   display: grid;
@@ -67,13 +75,15 @@
 
 }
 /* (Desktop) Featured Items layout */
-
+.FeatPageLayout{
+  height: 100vh;
+}
 .featuredPageLayout{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   width: 100;
   margin: 0 5%;
-  height: 100%;
+  height: auto;
   position: relative;
 
   gap: 10px;
@@ -97,21 +107,32 @@
   object-fit: contain;
   height: 100%;
 }
+#about h1{
+  text-align: center;
+  margin: 0px;
+}
 .AboutUsGrid{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
   height: 100%;
+  padding: 25px;
+  width: 90vw;
+  margin: 0 5%;
 }
 .CIMAGE {
   display: flex;
   justify-content: center;
 }
 .CIMAGE img{
-  border-radius: 20%;
-  width: auto;
+  border-radius: 50%;
+  width: 400px;
   height: 400px;
-
+  object-fit: cover;
+}
+a{
+  list-style: none;
+  color: white;
 }
 /* MOBILE VERSION */
 /* (MOBILE) Featured Items layout */

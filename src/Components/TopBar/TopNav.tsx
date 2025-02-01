@@ -6,10 +6,10 @@ const TopNav = () => {
         <div className="topNavMenu">
           <h2>Coffee</h2>
           <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Contact</li>
+            <a href="#home">Home</a>
+            <a href="#featured">Featured</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
           </ul>
         </div>
       </nav>
